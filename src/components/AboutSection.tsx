@@ -6,17 +6,24 @@ import { MusicIcon, Award, Radio, Mic2 } from "lucide-react";
 const members = [
   {
     id: 1,
-    name: "Алина",
+    name: "Dasha",
     role: "Вокал",
     image: "/placeholder.svg",
     description: "Солистка с мощным голосом и музыкальным образованием. Автор текстов многих хитов группы.",
   },
   {
     id: 2,
-    name: "Марина",
+    name: "Blake",
     role: "Вокал/Танцы",
     image: "/placeholder.svg",
     description: "Вокалистка и хореограф группы. Участвовала в международных танцевальных конкурсах.",
+  },
+  {
+    id: 3,
+    name: "Clover",
+    role: "Клавишные/Бэк-вокал",
+    image: "/placeholder.svg",
+    description: "Мультиинструменталист и аранжировщик. Отвечает за уникальное звучание группы.",
   },
 ];
 
@@ -50,7 +57,7 @@ const AboutSection = () => {
             О группе
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Two Girls — яркий музыкальный дуэт, покоривший сердца миллионов слушателей своими запоминающимися хитами
+            Dasha Blake and Clover — яркий музыкальный коллектив из Находки, покоривший сердца миллионов слушателей своими запоминающимися хитами
           </p>
         </div>
         
@@ -61,7 +68,7 @@ const AboutSection = () => {
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img 
                   src="/placeholder.svg"
-                  alt="История группы Two Girls" 
+                  alt="История группы Dasha Blake and Clover" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
@@ -74,30 +81,30 @@ const AboutSection = () => {
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">История группы</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Группа «Two Girls» образовалась в 2022 году, когда Алина и Марина встретились на музыкальном конкурсе. Их вокальная химия и схожее видение современной поп-музыки привели к созданию дуэта, который быстро завоевал популярность.
+                Группа «Dasha Blake and Clover» образовалась в 2025 году в городе Находка, когда трое талантливых музыкантов решили объединить свои творческие силы. Их уникальное звучание и яркие образы быстро привлекли внимание слушателей.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                Уже через год после основания группа выпустила свой дебютный альбом «Розовые мечты», который принес им национальную известность и премию за лучший дебют года.
+                Всего за несколько месяцев после основания группа выпустила свой дебютный альбом «Розовые мечты», который принес им национальную известность и премию за лучший дебют года.
               </p>
             </div>
           </div>
         </div>
         
-        {/* Участницы группы */}
+        {/* Участники группы */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Участницы</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Участники</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {members.map((member) => (
-              <div key={member.id} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-md flex flex-col sm:flex-row gap-6 items-center sm:items-start">
-                <Avatar className="w-24 h-24 rounded-full">
+              <div key={member.id} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-md flex flex-col items-center">
+                <Avatar className="w-24 h-24 rounded-full mb-4">
                   <AvatarImage src={member.image} alt={member.name} />
                   <AvatarFallback className="bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200 text-xl">
                     {member.name.charAt(0)}
                   </AvatarFallback>
                 </Avatar>
-                <div>
+                <div className="text-center">
                   <h4 className="text-xl font-semibold mb-1">{member.name}</h4>
-                  <p className="text-pink-600 dark:text-pink-400 mb-3 flex items-center">
+                  <p className="text-pink-600 dark:text-pink-400 mb-3 flex items-center justify-center">
                     <Mic2 className="w-4 h-4 mr-1" /> {member.role}
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">{member.description}</p>

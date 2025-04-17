@@ -28,7 +28,7 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-pink-500 mr-3 mt-1" />
                   <div>
                     <p className="font-medium mb-1">Email</p>
-                    <p className="text-gray-600 dark:text-gray-400">contact@twogirls.ru</p>
+                    <p className="text-gray-600 dark:text-gray-400">contact@dashaclover.ru</p>
                   </div>
                 </div>
                 
@@ -44,7 +44,7 @@ const ContactSection = () => {
                   <MapPin className="w-5 h-5 text-pink-500 mr-3 mt-1" />
                   <div>
                     <p className="font-medium mb-1">Адрес</p>
-                    <p className="text-gray-600 dark:text-gray-400">Москва, ул. Музыкальная, 42</p>
+                    <p className="text-gray-600 dark:text-gray-400">г. Находка, ул. Музыкальная, 42</p>
                   </div>
                 </div>
               </div>

@@ -12,11 +12,11 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Link to="/" className="inline-block mb-4">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
-                Two Girls
+                Dasha Blake and Clover
               </h3>
             </Link>
             <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md">
-              Яркий поп-дуэт, создающий зажигательные треки с неповторимыми вокальными гармониями
+              Яркий поп-коллектив из Находки, создающий зажигательные треки с неповторимыми вокальными гармониями
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-pink-600 dark:text-gray-400 dark:hover:text-pink-400 transition-colors">
@@ -71,13 +71,13 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4 text-gray-800 dark:text-gray-200">Контакты</h4>
             <ul className="space-y-2">
               <li className="text-gray-600 dark:text-gray-400">
-                contact@twogirls.ru
+                contact@dashaclover.ru
               </li>
               <li className="text-gray-600 dark:text-gray-400">
                 +7 (999) 123-45-67
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                Москва, ул. Музыкальная, 42
+                г. Находка, ул. Музыкальная, 42
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ const Footer = () => {
         
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
           <p className="text-gray-600 dark:text-gray-400 mb-2 sm:mb-0">
-            &copy; {new Date().getFullYear()} Two Girls. Все права защищены.
+            &copy; {new Date().getFullYear()} Dasha Blake and Clover. Все права защищены.
           </p>
           <p className="text-gray-600 dark:text-gray-400 flex items-center">
             Создано с <Heart className="w-4 h-4 text-pink-500 mx-1" /> для всех фанатов

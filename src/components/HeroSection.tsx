@@ -8,9 +8,9 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
-            <p className="text-pink-600 font-semibold mb-2">Яркий поп-дуэт</p>
+            <p className="text-pink-600 font-semibold mb-2">Яркий поп-дуэт из Находки</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
-              Two Girls
+              Dasha Blake and Clover
             </h1>
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
               Зажигательные треки, неповторимые вокальные гармонии и яркие шоу
@@ -28,7 +28,7 @@ const HeroSection = () => {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl ring-1 ring-pink-200 dark:ring-pink-800">
               <img 
                 src="/placeholder.svg" 
-                alt="Two Girls поп-группа" 
+                alt="Dasha Blake and Clover поп-группа" 
                 className="w-full h-full object-cover"
               />
             </div>

@@ -1,7 +1,7 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-import { MusicIcon, Award, Radio, Mic2 } from "lucide-react";
+import { MusicIcon, Award, Radio, Mic2, Music, Disc3 } from "lucide-react";
 
 const members = [
   {
@@ -23,21 +23,21 @@ const members = [
 const achievements = [
   {
     id: 1,
-    icon: <MusicIcon className="w-10 h-10 text-pink-500" />,
-    title: "Дебютный альбом «Неразлучные»",
-    description: "Скоро выйдет наш первый альбом с авторскими треками",
+    icon: <Disc3 className="w-10 h-10 text-pink-500" />,
+    title: "Дебютный альбом",
+    description: "«Неразлучные» — 20 треков о дружбе, любви и чувствах",
   },
   {
     id: 2,
     icon: <Mic2 className="w-10 h-10 text-purple-500" />,
-    title: "Первые школьные концерты",
-    description: "Успешные выступления на городских мероприятиях",
+    title: "Первые выступления",
+    description: "Концерты в Находке, Владивостоке и Уссурийске",
   },
   {
     id: 3,
-    icon: <Radio className="w-10 h-10 text-pink-500" />,
-    title: "Поддержка слушателей",
-    description: "Растущая аудитория в социальных сетях",
+    icon: <Music className="w-10 h-10 text-pink-500" />,
+    title: "Творческие планы",
+    description: "Работа над новыми треками и музыкальными видео",
   },
 ];
 
@@ -66,7 +66,7 @@ const AboutSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                   <div className="p-6">
-                    <p className="text-white font-medium">В процессе записи нового трека</p>
+                    <p className="text-white font-medium">В процессе записи альбома «Неразлучные»</p>
                   </div>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const AboutSection = () => {
                 Дуэт «Dasha Blake and Clover» образовался в 2025 году в городе Находка, когда два школьных друга решили объединить свои творческие способности и любовь к музыке. Несмотря на юный возраст (нам по 15 лет), мы серьезно относимся к своему творчеству.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                Сейчас мы работаем над дебютным альбомом «Неразлучные», в который войдут наши первые треки «Первая любовь» и «Ненормальные». Уже скоро альбом будет доступен на всех площадках!
+                Сейчас мы работаем над дебютным альбомом «Неразлучные», который расскажет истории о дружбе, первой любви и искренних чувствах. В альбом войдут 20 треков, среди которых «Первая любовь», «Ненормальные», «Неразлучные», «Я так» и другие композиции, близкие сердцу каждого слушателя.
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ const AboutSection = () => {
         
         {/* Достижения */}
         <div>
-          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Наши цели</h3>
+          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Наши проекты</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {achievements.map((achievement) => (
               <div key={achievement.id} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-md text-center">

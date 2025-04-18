@@ -6,45 +6,38 @@ import { MusicIcon, Award, Radio, Mic2 } from "lucide-react";
 const members = [
   {
     id: 1,
-    name: "Dasha",
-    role: "Вокал",
+    name: "Dasha Blake",
+    role: "Вокал/Автор песен",
     image: "/placeholder.svg",
-    description: "Солистка с мощным голосом и музыкальным образованием. Автор текстов многих хитов группы.",
+    description: "15-летняя солистка с ярким голосом. Автор текстов многих песен дуэта. Обожает сочинять музыку с детства.",
   },
   {
     id: 2,
-    name: "Blake",
-    role: "Вокал/Танцы",
-    image: "/placeholder.svg",
-    description: "Вокалистка и хореограф группы. Участвовала в международных танцевальных конкурсах.",
-  },
-  {
-    id: 3,
     name: "Clover",
-    role: "Клавишные/Бэк-вокал",
+    role: "Клавишные/Вокал",
     image: "/placeholder.svg",
-    description: "Мультиинструменталист и аранжировщик. Отвечает за уникальное звучание группы.",
+    description: "15-летний музыкант и композитор. Отвечает за аранжировки и уникальное звучание группы. Пишет музыку для всех треков.",
   },
 ];
 
 const achievements = [
   {
     id: 1,
-    icon: <Award className="w-10 h-10 text-pink-500" />,
-    title: "Премия «Золотой хит»",
-    description: "За лучший дебютный альбом года",
+    icon: <MusicIcon className="w-10 h-10 text-pink-500" />,
+    title: "Дебютный альбом «Неразлучные»",
+    description: "Скоро выйдет наш первый альбом с авторскими треками",
   },
   {
     id: 2,
-    icon: <MusicIcon className="w-10 h-10 text-purple-500" />,
-    title: "10 миллионов прослушиваний",
-    description: "Сингл «Электрические ночи» на всех платформах",
+    icon: <Mic2 className="w-10 h-10 text-purple-500" />,
+    title: "Первые школьные концерты",
+    description: "Успешные выступления на городских мероприятиях",
   },
   {
     id: 3,
     icon: <Radio className="w-10 h-10 text-pink-500" />,
-    title: "Ротации на радио",
-    description: "Треки на ведущих радиостанциях страны",
+    title: "Поддержка слушателей",
+    description: "Растущая аудитория в социальных сетях",
   },
 ];
 
@@ -54,10 +47,10 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-4">
-            О группе
+            О дуэте
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Dasha Blake and Clover — яркий музыкальный коллектив из Находки, покоривший сердца миллионов слушателей своими запоминающимися хитами
+            Dasha Blake and Clover — молодой музыкальный дуэт из Находки, создающий искреннюю и яркую музыку, которая находит отклик в сердцах наших слушателей
           </p>
         </div>
         
@@ -68,23 +61,23 @@ const AboutSection = () => {
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img 
                   src="/placeholder.svg"
-                  alt="История группы Dasha Blake and Clover" 
+                  alt="Dasha Blake and Clover в студии" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                   <div className="p-6">
-                    <p className="text-white font-medium">Выступление на фестивале «Яркие звезды»</p>
+                    <p className="text-white font-medium">В процессе записи нового трека</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="md:w-1/2">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">История группы</h3>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">История дуэта</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Группа «Dasha Blake and Clover» образовалась в 2025 году в городе Находка, когда трое талантливых музыкантов решили объединить свои творческие силы. Их уникальное звучание и яркие образы быстро привлекли внимание слушателей.
+                Дуэт «Dasha Blake and Clover» образовался в 2025 году в городе Находка, когда два школьных друга решили объединить свои творческие способности и любовь к музыке. Несмотря на юный возраст (нам по 15 лет), мы серьезно относимся к своему творчеству.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                Всего за несколько месяцев после основания группа выпустила свой дебютный альбом «Розовые мечты», который принес им национальную известность и премию за лучший дебют года.
+                Сейчас мы работаем над дебютным альбомом «Неразлучные», в который войдут наши первые треки «Первая любовь» и «Ненормальные». Уже скоро альбом будет доступен на всех площадках!
               </p>
             </div>
           </div>
@@ -93,7 +86,7 @@ const AboutSection = () => {
         {/* Участники группы */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Участники</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {members.map((member) => (
               <div key={member.id} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-md flex flex-col items-center">
                 <Avatar className="w-24 h-24 rounded-full mb-4">
@@ -116,7 +109,7 @@ const AboutSection = () => {
         
         {/* Достижения */}
         <div>
-          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Достижения</h3>
+          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Наши цели</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {achievements.map((achievement) => (
               <div key={achievement.id} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-md text-center">

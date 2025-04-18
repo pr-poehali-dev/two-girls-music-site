@@ -16,7 +16,7 @@ const Footer = () => {
               </h3>
             </Link>
             <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md">
-              Яркий поп-коллектив из Находки, создающий зажигательные треки с неповторимыми вокальными гармониями
+              Молодой музыкальный дуэт из Находки, создающий искреннюю и яркую музыку
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-pink-600 dark:text-gray-400 dark:hover:text-pink-400 transition-colors">
@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/concerts" className="text-gray-600 hover:text-pink-600 dark:text-gray-400 dark:hover:text-pink-400 transition-colors">
-                  Концерты
+                  Выступления
                 </Link>
               </li>
               <li>
@@ -71,13 +71,13 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4 text-gray-800 dark:text-gray-200">Контакты</h4>
             <ul className="space-y-2">
               <li className="text-gray-600 dark:text-gray-400">
-                contact@dashaclover.ru
+                dashaclover@music.ru
               </li>
               <li className="text-gray-600 dark:text-gray-400">
                 +7 (999) 123-45-67
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                г. Находка, ул. Музыкальная, 42
+                г. Находка, Приморский край
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Dasha Blake and Clover. Все права защищены.
           </p>
           <p className="text-gray-600 dark:text-gray-400 flex items-center">
-            Создано с <Heart className="w-4 h-4 text-pink-500 mx-1" /> для всех фанатов
+            Создано с <Heart className="w-4 h-4 text-pink-500 mx-1" /> для наших слушателей
           </p>
         </div>
       </div>
